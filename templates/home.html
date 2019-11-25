@@ -4,7 +4,7 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}, please go to /stores or logout and login again!
+  Hi {{ user.username }}, please go to /map or logout and login again!
   <p><a href="{% url 'logout' %}">Logout</a></p>
 {% else %}
   <p>You are not logged in map</p>
