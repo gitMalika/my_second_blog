@@ -35,11 +35,11 @@ LOGOUT_REDIRECT_URL = 'home'
 # Application definition
 
 INSTALLED_APPS = [
+    'regions',
     'bs_status',
     'coverage',
     'ct_sale',
     'almaty_districts',
-    'regions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
