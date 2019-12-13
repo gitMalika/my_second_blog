@@ -18,8 +18,12 @@ from django.urls import path, include
 from django.views.generic.base import TemplateView
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('map/', include('map.urls')),
+    path('regions/', include('regions.urls')),
+    path('bs_status/', include('bs_status.urls')),
+    path('coverage/', include('coverage.urls')),
+    path('almaty_districts/', include('almaty_districts.urls')),
+    path('ct_sale/', include('ct_sale.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]

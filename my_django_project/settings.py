@@ -28,13 +28,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-LOGIN_REDIRECT_URL = '/map'
+# LOGIN_REDIRECT_URL = '/map'
+LOGIN_REDIRECT_URL = '/regions'
 LOGOUT_REDIRECT_URL = 'home'
 
 # Application definition
 
 INSTALLED_APPS = [
-    'map',
+    'bs_status',
+    'coverage',
+    'ct_sale',
+    'almaty_districts',
+    'regions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
