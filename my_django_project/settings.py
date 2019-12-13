@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'bs_status',
     'coverage',
     'ct_sale',
+    'stores',
     'almaty_districts',
     'django.contrib.admin',
     'django.contrib.auth',

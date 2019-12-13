@@ -25,5 +25,6 @@ urlpatterns = [
     path('coverage/', include('coverage.urls')),
     path('almaty_districts/', include('almaty_districts.urls')),
     path('ct_sale/', include('ct_sale.urls')),
+    path('stores/', include('stores.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]
