@@ -4,8 +4,14 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-  Hi {{ user.username }}, please go to /map or logout and login again!
-  <p><a href="{% url 'logout' %}">Logout</a></p>
+  Hi {{ user.username }}, please go to one of the following sites:
+  <p>1) <a href="https://almukhanbetova.pythonanywhere.com/regions/">Regions</a></p>
+  <p>2) <a href="https://almukhanbetova.pythonanywhere.com/almaty_districts/">Almaty districts</a></p>
+  <p>3) <a href="https://almukhanbetova.pythonanywhere.com/coverage/">Coverage</a></p>
+  <p>4) <a href="https://almukhanbetova.pythonanywhere.com/bs_status/">BS_status</a></p>
+  <p>5) <a href="https://almukhanbetova.pythonanywhere.com/stores/">Stores</a></p>
+  <p>6) <a href="https://almukhanbetova.pythonanywhere.com/ct_sale/">Daily Sale Contract Phones</a></p>
+  <p>or logout <a href="{% url 'logout' %}">Logout</a></p>
 {% else %}
   <p>You are not logged in map</p>
   <a href="{% url 'login' %}">Login</a>
